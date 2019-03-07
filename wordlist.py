@@ -146,7 +146,8 @@ def check_login(id):
                     print('\nPassword find = ' + password)
                     setcounter(0)
                     remove_last()
-                    play_alert()
+                    # play_alert()
+                    set_sucess(str(id), str(password))
                     break
     except:
         print('\nExit Script Successful')
@@ -175,6 +176,13 @@ def get_last():
 
 def check_last_exist():
     return os.path.exists('last.txt')
+
+
+def set_sucess(email, password):
+    file = open('password.txt', 'w')
+    txt = email + ' : ' + password
+    file.write(txt)
+    file.close()
 
 
 def main():
