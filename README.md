@@ -1,2 +1,2 @@
 # facebook-brutforce
-this script is used to generate facebook wordlist and do a brut forcing attack to facebook
+This tool is used to generate custom facebook wordlist and do a brute force attack to facebook   
